@@ -1,0 +1,18 @@
+name: 04 - Using Actions
+
+on: push
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out the code
+              uses: actions/checkout@v4
+            - name: Printing Folders
+              run: ls 
+        # 0.. Check out the code from the repository.
+        # 1.. install dependencies of our React application
+        # 2.. execute automated tests.
+        # 3.. if tests are successful, build the application and deploy it.
+    
